@@ -61,14 +61,14 @@ void moveForward(){
   digitalWrite(IN4, HIGH);
 }
 
-void turnLeft(){
+void turnRight(){
   digitalWrite(IN1, LOW);
   digitalWrite(IN2, HIGH);
   digitalWrite(IN3, HIGH);
   digitalWrite(IN4, HIGH);
 }
 
-void turnRight(){
+void turnLeft(){
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, HIGH);
   digitalWrite(IN3, LOW);
