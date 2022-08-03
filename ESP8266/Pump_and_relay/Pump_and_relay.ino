@@ -1,4 +1,4 @@
-int relay1 = D1 ;
+int relay1 = 15 ;
 void setup() {
   pinMode(relay1, OUTPUT);      // Initialize the LED_BUILTIN pin as an output
 }
