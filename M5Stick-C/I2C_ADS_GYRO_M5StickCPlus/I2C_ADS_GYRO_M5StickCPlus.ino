@@ -1,4 +1,13 @@
 #include <Adafruit_ADS1X15.h>
+#include <M5StickCPlus.h>
+
+float accX = 0.0F;
+float accY = 0.0F;
+float accZ = 0.0F;
+
+float gyroX = 0.0F;
+float gyroY = 0.0F;
+float gyroZ = 0.0F;
 
 Adafruit_ADS1115 ads;  /* Use this for the 16-bit version */
 //Adafruit_ADS1015 ads;     /* Use this for the 12-bit version */
@@ -11,18 +20,16 @@ void setup(void)
   Serial.println("Getting single-ended readings from AIN0..3");
   Serial.println("ADC Range: +/- 6.144V (1 bit = 3mV/ADS1015, 0.1875mV/ADS1115)");
 
-  // The ADC input range (or gain) can be changed via the following
-  // functions, but be careful never to exceed VDD +0.3V max, or to
-  // exceed the upper and lower limits if you adjust the input range!
-  // Setting these values incorrectly may destroy your ADC!
-  //                                                                ADS1015  ADS1115
-  //                                                                -------  -------
-  // ads.setGain(GAIN_TWOTHIRDS);  // 2/3x gain +/- 6.144V  1 bit = 3mV      0.1875mV (default)
-  // ads.setGain(GAIN_ONE);        // 1x gain   +/- 4.096V  1 bit = 2mV      0.125mV
-  // ads.setGain(GAIN_TWO);        // 2x gain   +/- 2.048V  1 bit = 1mV      0.0625mV
-  // ads.setGain(GAIN_FOUR);       // 4x gain   +/- 1.024V  1 bit = 0.5mV    0.03125mV
-  // ads.setGain(GAIN_EIGHT);      // 8x gain   +/- 0.512V  1 bit = 0.25mV   0.015625mV
-  // ads.setGain(GAIN_SIXTEEN);    // 16x gain  +/- 0.256V  1 bit = 0.125mV  0.0078125mV
+    M5.begin();             // Init M5StickC Plus.  初始化 M5StickC Plus
+    M5.Imu.Init();          // Init IMU.  初始化IMU
+    M5.Lcd.setRotation(3);  // Rotate the screen. 将屏幕旋转
+    M5.Lcd.fillScreen(BLACK);
+    M5.Lcd.setTextSize(1);
+    M5.Lcd.setCursor(80, 15);  // set the cursor location.  设置光标位置
+    M5.Lcd.println("IMU TEST");
+    M5.Lcd.setCursor(30, 30);
+    M5.Lcd.println("  X       Y       Z");
+    M5.Lcd.setCursor(30, 70);
 
   if (!ads.begin()) {
     Serial.println("Failed to initialize ADS.");
@@ -34,22 +41,29 @@ void loop(void)
 {
   int16_t adc0, adc1, adc2, adc3;
   float volts0, volts1, volts2, volts3;
-
+  static float temp = 0;
   adc0 = ads.readADC_SingleEnded(0);
   adc1 = ads.readADC_SingleEnded(1);
   adc2 = ads.readADC_SingleEnded(2);
   adc3 = ads.readADC_SingleEnded(3);
-
-  volts0 = ads.computeVolts(adc0);
-  volts1 = ads.computeVolts(adc1);
-  volts2 = ads.computeVolts(adc2);
-  volts3 = ads.computeVolts(adc3);
-
   Serial.println("-----------------------------------------------------------");
   Serial.print("AIN0: "); Serial.print(adc0); Serial.print("  "); Serial.print(volts0); Serial.println("V");
   Serial.print("AIN1: "); Serial.print(adc1); Serial.print("  "); Serial.print(volts1); Serial.println("V");
   Serial.print("AIN2: "); Serial.print(adc2); Serial.print("  "); Serial.print(volts2); Serial.println("V");
   Serial.print("AIN3: "); Serial.print(adc3); Serial.print("  "); Serial.print(volts3); Serial.println("V");
+  M5.IMU.getGyroData(&gyroX, &gyroY, &gyroZ);
+    M5.IMU.getAccelData(&accX, &accY, &accZ);
+    M5.IMU.getTempData(&temp);
+    M5.Lcd.setCursor(30, 40);
+    M5.Lcd.printf("%6.2f  %6.2f  %6.2f      ", gyroX, gyroY, gyroZ);
+    M5.Lcd.setCursor(170, 40);
+    M5.Lcd.print("o/s");
+    M5.Lcd.setCursor(30, 50);
+    M5.Lcd.printf(" %5.2f   %5.2f   %5.2f   ", accX, accY, accZ);
+    M5.Lcd.setCursor(170, 50);
+    M5.Lcd.print("G");
 
-  delay(1000);
+    M5.Lcd.setCursor(30, 95);
+    M5.Lcd.printf("Temperature : %.2f C", temp);
+    delay(100);
 }

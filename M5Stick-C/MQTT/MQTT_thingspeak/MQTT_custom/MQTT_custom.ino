@@ -22,6 +22,10 @@ PubSubClient client(espClient);
 
 Adafruit_ADS1115 ads;
 
+
+float gyroX = 0.0F, gyroY = 0.0F, gyroZ = 0.0F, accX = 0.0F, accY = 0.0F, accZ = 0.0F, pitch = 0.0F, roll = 0.0F, yaw = 0.0F;
+
+
 void setup_wifi() {
 
   delay(10);
@@ -66,11 +70,11 @@ void reconnect() {
     if (client.connect(SECRET_MQTT_CLIENT_ID, SECRET_MQTT_USERNAME, SECRET_MQTT_PASSWORD)) {
       Serial.println("connected");
       
-      char subscribe_topic[100];
-      sprintf(subscribe_topic,"channels/%s/subscribe",MQTT_CHANNEL);
-      client.subscribe(subscribe_topic);
-      sprintf(subscribe_topic,"channels/%s/subscribe/fields/%s",MQTT_CHANNEL,"field1");
-      client.subscribe(subscribe_topic);
+      //char subscribe_topic[100];
+      //sprintf(subscribe_topic,"channels/%s/subscribe",MQTT_CHANNEL);
+      client.subscribe("topgun/Jezuz/arm/movement");
+      //sprintf(subscribe_topic,"channels/%s/subscribe/fields/%s",MQTT_CHANNEL,"field1");
+      client.subscribe("topgun/Jezuz/fingers/grasp");
       
       Serial.println("subscribed");
       M5.Lcd.fillScreen(GREEN);
@@ -94,7 +98,7 @@ void setup() {
 
   M5.begin();
   M5.Lcd.setRotation(1);
-  
+   M5.Imu.Init();
   M5.Lcd.fillScreen(BLUE);
   M5.Lcd.setCursor(15, 10);
   M5.Lcd.setTextColor(WHITE);
@@ -104,7 +108,7 @@ void setup() {
   Serial.begin(115200);
   
   setup_wifi();
-  client.setServer(mqtt_server, 1883);
+  client.setServer(mqtt_server, 15958);
   client.setCallback(callback);
   client.setBufferSize(2048);
 
@@ -122,42 +126,40 @@ void loop() {
   client.loop();
 
   static int c=0;
-  int16_t adc0, adc1, adc2, adc3;
-  float volts0, volts1, volts2, volts3,accX = 0.0F,accY = 0.0F, accZ = 0.0F;
-  char topic[40];
-  //StaticJsonDocument<256> jsonData;
-  char payload[100];
+  int adc0, adc1, adc2, adc3;
+  char topic1[40], topic2[40];
+  StaticJsonDocument<256> jsonData1;
+  StaticJsonDocument<512> jsonData2;
+  char payload1[100], payload2[200];
   adc0 = ads.readADC_SingleEnded(0);
   adc1 = ads.readADC_SingleEnded(1);
   adc2 = ads.readADC_SingleEnded(2);
   adc3 = ads.readADC_SingleEnded(3);
 
-  M5.IMU.getAccelData(&accX,&accY,&accZ);
-  sprintf(topic,"channels/%s/publish", MQTT_CHANNEL);
-  sprintf(payload,"field1=%d&field2=%d&field3=%d&field4=%d&field5=%d&status=MQTTPUBLISH",adc0,adc1,adc2,adc3,accZ);
-  /*jsonData["field1"] = adc0;
-  jsonData["field2"] = adc1;
-  jsonData["field3"] = adc2;
-  jsonData["field4"] = adc3;
-  jsonData["status"] = "MQTTPUBLISH";
-  serializeJson(jsonData, payload);*/
-  client.publish(topic, payload);
-  Serial.println("Topic and Payload sent");   
+  M5.IMU.getGyroData(&gyroX, &gyroY, &gyroZ);
+  M5.IMU.getAccelData(&accX, &accY, &accZ);
+  M5.IMU.getAhrsData(&pitch, &roll, &yaw);
+  sprintf(topic1,"topgun/Jezuz/fingers/grasp/");
+  sprintf(topic2,"topgun/Jezuz/arm/move/");
+  //sprintf(payload,"field1=%d&field2=%d&field3=%d&field4=%d&field5=%d&status=MQTTPUBLISH",adc0,adc1,adc2,adc3,accZ);
+  jsonData1["finger1"] = adc0;
+  jsonData1["finger2"] = adc1;
+  jsonData1["finger3"] = adc2;
+  jsonData1["finger4"] = adc3;
+  jsonData2["gx"] = gyroX;
+  jsonData2["gy"] = gyroY;
+  jsonData2["gz"] = gyroZ;
+  jsonData2["ax"] = accX;
+  jsonData2["ay"] = accY;
+  jsonData2["az"] = accZ;
+  jsonData2["pitch"] = pitch;
+  jsonData2["roll"] = roll;
+  jsonData2["yaw"] = yaw;
+  serializeJson(jsonData1, payload1);
+  serializeJson(jsonData2, payload2);
+  client.publish(topic1, payload1);
+  Serial.println("Topic1 and Payload1 sent");   
+  client.publish(topic2, payload2);
+  Serial.println("Topic2 and Payload2 sent"); 
   delay(500);
-  /*if(digitalRead(BUTTON_A_PIN) == 0) {
-    char topic[40];
-    char payload[100];
-    sprintf(topic,"channels/%s/publish", MQTT_CHANNEL);
-    sprintf(payload,"field1=%d&field2=%d&field3=%d&field4=%.4f&status=MQTTPUBLISH",c,c%2,c%3,c%4);
-    client.publish(topic, payload);
-    Serial.println("Button pressed");   
-    delay(500);
-
-    M5.Lcd.setCursor(20, 53);
-    M5.Lcd.setTextColor(WHITE,GREEN);
-    M5.Lcd.setTextSize(2);
-    M5.Lcd.printf("c=%2d",c);
-  
-    c>=12? c=0: c++; 
-  };*/
 }

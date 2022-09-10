@@ -3,7 +3,7 @@ MQTT Client for EMQX
 Author : R. Sutthaweekul
 */
 
-#include <M5StickC.h>
+#include <M5StickCPlus.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
 
@@ -117,8 +117,8 @@ void loop() {
   if(digitalRead(BUTTON_A_PIN) == 0) {
     char topic[40];
     char payload[100];
-    sprintf(topic,"%s/fingers", MQTT_TOPIC_PREFIX);
-    sprintf(payload,"{\"finger1\"=%d,\"finger2\"=%d,\"finger3\"=%d,\"finger4=%d,\"finger5\"=%d}",c,c%2,c%3,c%4,c%5);
+    sprintf(topic,"%s/grasp", MQTT_TOPIC_PREFIX);
+    sprintf(payload,"{\"finger1\"=%d,\"finger2\"=%d,\"finger3\"=%d,\"finger4=%d,\"finger5-\"=%d}",c,c%2,c%3,c%4,c%5);
     client.publish(topic, payload);
     Serial.println("Button pressed");   
     delay(500);
