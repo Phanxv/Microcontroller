@@ -11,13 +11,13 @@
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
-
+#include <DHT.h>
 const char auth[] = BLYNK_AUTH_TOKEN;
-const char ssid[] = "IOT_WIFI";  // "Huawei_Y7";  // "TNI_WiFi_Officer";
-const char pass[] = "TNI_IOT_C503";  // "abcdefabcd";
+const char ssid[] = "furue";//"TNI_IOT_WATER";//"dlink_DWR-920_A535";  // "Huawei_Y7";  // "TNI_WiFi_Officer";
+const char pass[] = "Delta_006";//"zbSUM36557";  // "abcdefabcd";
 
-#define WIFI_SSID "IOT_WIFI"  
-#define WIFI_PASS "TNI_IOT_C503"
+#define WIFI_SSID "furue"//"dlink_DWR-920_A535"  
+#define WIFI_PASS "Delta_006"//"zbSUM36557"
 
 WiFiClient client;  
 BlynkTimer timer;
@@ -25,10 +25,10 @@ void timerEvent();
 
 /*---------------------------------------------------------*/
 #include <Wire.h>
-#include <OneWire.h>
+//#include <OneWire.h>
 #include <LiquidCrystal_I2C.h>
 
-OneWire  ds(2);  // D4 on pin 2 (a 4.7K resistor is necessary)
+//OneWire  ds(2);  // D4 on pin 2 (a 4.7K resistor is necessary)
 
 #define SCL   D1
 #define SDA   D2
@@ -37,6 +37,8 @@ OneWire  ds(2);  // D4 on pin 2 (a 4.7K resistor is necessary)
 #define US_T  D6 // LEDY
 #define US_E  D7
 #define Buzz  D8
+#define DHTPIN D4
+#define DHTTYPE DHT11
 
 // Set the LCD address to 0x27 for a 16 chars and 2 line display
 LiquidCrystal_I2C lcd(0x27, 16, 2);
@@ -48,6 +50,7 @@ int i, analogPin = A0, val = 0, map_val = 0, count = 0;
 int16_t raw;
 float celsius;
 float WS;
+DHT dht(DHTPIN, DHTTYPE);
 
 void setup()
 {
@@ -63,10 +66,10 @@ void setup()
   duration = pulseIn(US_E, HIGH);
 
   Serial.begin(115200);
-  Wire.begin(SDA, SCL);
-
+  //Wire.begin(SDA, SCL);
+  dht.begin();
   // initialize the LCD
-  lcd.init();
+  lcd.begin();
   lcd.home();
 
   // Turn on the blacklight and print a message.
@@ -184,7 +187,7 @@ void timerEvent()
 
   /*-- Temperature ----------------------------------------*/
 
-  byte addr[] = {0x28, 0x3E, 0x38, 0x75, 0xD0, 0x01, 0x3C, 0xB3};
+  /*byte addr[] = {0x28, 0x3E, 0x38, 0x75, 0xD0, 0x01, 0x3C, 0xB3};
   byte data[12];
 
   ds.reset();
@@ -199,8 +202,8 @@ void timerEvent()
     data[i] = ds.read();
   }
 
-  raw = (data[1] << 8) | data[0];
-  celsius = (float)raw / 16.0;
+  raw = (data[1] << 8) | data[0];*/
+  celsius = dht.readTemperature();
 
   Blynk.virtualWrite(V6, celsius);
   lcd.setCursor(1, 0);

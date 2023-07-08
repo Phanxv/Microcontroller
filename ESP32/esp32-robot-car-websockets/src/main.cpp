@@ -112,8 +112,8 @@ public:
 };
 
 // Change this to your network SSID
-const char *ssid = "ROBOT_CAR_WIFI";
-const char *password = "CAR_WIFI_001";
+const char *ssid = "furue";
+const char *password = "Delta_006";
 
 // AsyncWebserver runs on port 80 and the asyncwebsocket is initialize at this point also
 AsyncWebServer server(80);
