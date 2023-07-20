@@ -1,0 +1,177 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Phankawee Chulakasian, Thai-Nichi Institute of Technology, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Works\Microcontroller\STM32L152rb\Lab004\Lab004_SW_Debounce_EXTI\Lab004_Debounce.uvprojx
+Project File Date:  07/13/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(143): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(127): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  TIM7_IRQn                   = 44,     /*!< TIM7 global Interrupt                                   */
+                                  ^~
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(281): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_hal.h(30): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_conf.h(185): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_rcc.h(29): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_def.h(33): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(281): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_hal.h(30): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_conf.h(197): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_dma.h(82): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  HAL_DMA_STATE_TIMEOUT           = 0x03U,  /*!< DMA timeout state                      */
+                                         ^~
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(281): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_hal.h(30): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_conf.h(225): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_flash.h(72): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  FLASH_PROC_PROGRAM           = 2U,
+                                   ^
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(281): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_hal.h(30): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_conf.h(273): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_tim.h(246): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  HAL_TIM_CHANNEL_STATE_BUSY              = 0x02U,    /*!< An internal process is ongoing on the TIM channel */
+                                                 ^~
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_tim.h(256): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  HAL_DMA_BURST_STATE_BUSY              = 0x02U,    /*!< Ongoing DMA Burst       */
+                                               ^~
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(281): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_hal.h(30): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_conf.h(297): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_pcd.h(64): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  LPM_L3 = 0x03, /* off */
+               ^
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_pcd.h(70): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  PCD_LPM_L1_ACTIVE = 0x01, /* LPM L1 sleep */
+                          ^
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_pcd.h(80): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  PCD_BCD_DISCOVERY_COMPLETED       = 0x00,
+                                          ^
+main.c(1): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(281): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_hal.h(30): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_conf.h(297): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_pcd.h(29): warning: In file included from...
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_ll_usb.h(97): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'pmaadress' [-Wpadded]
+  uint16_t  pmaadress;       /*!< PMA Address
+            ^
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_ll_usb.h(109): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;     /*!< This parameter is not required by USB Device FS peripheral, it is used
+            ^
+C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_ll_usb.h(80): warning: padding size of 'USB_EPTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+main.c(3): warning: no previous extern declaration for non-static variable 'LED_status' [-Wmissing-variable-declarations]
+int LED_status = 0;
+    ^
+main.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int LED_status = 0;
+^
+main.c(5): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main(){
+        ^
+         void
+main.c(6): warning: // comments are not allowed in this language [-Wcomment]
+                //Setup GPIO
+                ^
+main.c(8): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIOC->MODER &= ~(3<<6);
+                 ~~ ^~~~~~~
+main.c(12): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SYSCFG->EXTICR[0] &= ~(15<<12);
+                      ~~ ^~~~~~~~~
+main.c(25): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(23): warning: no previous prototype for function 'EXTI3_IRQHandler' [-Wmissing-prototypes]
+void EXTI3_IRQHandler(void){
+     ^
+main.c(23): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void EXTI3_IRQHandler(void){
+^
+static 
+23 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=604 RO-data=260 RW-data=0 ZI-data=1632  
+".\Objects\Lab004_Debounce.axf" - 0 Error(s), 23 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L1xx_DFP.1.4.1.pack
+                Keil.STM32L1xx_DFP.1.4.1
+                STMicroelectronics STM32L1 Series Device Support and Examples
+   * Component: Startup Version: 1.10.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/phank/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil.Standalone::Device:Startup:1.10.3
+      Source file:   MDK/Device/Source/ARM/STM32L1xx_HD_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32L1xx_MD+_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32L1xx_MD_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l1xx.h
+      Source file:   MDK/Device/Source/ARM/STM32L1xx_XL_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32L1xx/Source/Templates/system_stm32l1xx.c
+      Source file:   Drivers/CMSIS/Device/ST/STM32L1xx/Source/Templates/arm/startup_stm32l152xb.s
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
