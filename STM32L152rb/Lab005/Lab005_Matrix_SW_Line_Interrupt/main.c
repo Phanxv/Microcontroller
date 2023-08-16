@@ -81,3 +81,4 @@ void EXTI2_IRQHandler(void){
 	}
 	EXTI->PR |= (1<<0);//Clear pending interrupt request
 }
+
