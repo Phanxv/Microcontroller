@@ -8,9 +8,11 @@
   ..\..\Drivers\CMSIS\Include\core_cmFunc.h \
   ..\..\Drivers\CMSIS\Device\ST\STM32L1xx\Include\system_stm32l1xx.h \
   ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_system.h \
-  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_bus.h \
-  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_utils.h \
   ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_rcc.h \
-  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_pwr.h \
   ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_gpio.h \
-  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_dac.h
+  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_pwr.h \
+  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_utils.h \
+  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_bus.h \
+  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_tim.h \
+  ..\..\Drivers\STM32L1xx_HAL_Driver\Inc\stm32l1xx_ll_usart.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h
