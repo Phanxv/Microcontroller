@@ -1,0 +1,1404 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Phankawee Chulakasian, Thai-Nichi Institute of Technology, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Works\Microcontroller\STM32L152rb\Lab106\L106_InputCapture\Project\MDK-ARM\STM32L152RB.uvprojx
+Project File Date:  12/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Demonstrate'
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Source/Templates/system_stm32l1xx.c(63): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Source/Templates/system_stm32l1xx.c(63): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+3 warnings generated.
+compiling system_stm32l1xx.c...
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_pwr.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_pwr.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_pwr.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_pwr.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+3 warnings generated.
+compiling stm32l1xx_ll_pwr.c...
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_rcc.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_rcc.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_rcc.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_rcc.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+3 warnings generated.
+compiling stm32l1xx_ll_rcc.c...
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_lcd.c(14): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_lcd.h(22): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_lcd.c(14): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_lcd.h(22): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_lcd.c(261): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+LL_LCD_StateTypeDef LL_LCD_Clear()
+                                ^
+                                 void
+4 warnings generated.
+compiling stm32l1xx_ll_lcd.c...
+../src/main.c(1): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../src/main.c(1): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(292): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->MODER, (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U)), (Mode << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(292): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->MODER, (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U)), (Mode << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(327): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                  ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(327): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(433): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Speed << (POSITION_VAL(Pin) * 2U)));
+             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(432): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->OSPEEDR, (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(470): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                       ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(470): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(503): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->PUPDR, (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U)), (Pull << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(503): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->PUPDR, (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U)), (Pull << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(536): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                  ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(536): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(576): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Alternate << (POSITION_VAL(Pin) * 4U)));
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(575): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->AFR[0], (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(613): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U))) >> (POSITION_VAL(Pin) * 4U));
+                                                                                 ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(613): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U))) >> (POSITION_VAL(Pin) * 4U));
+                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(653): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Alternate << (POSITION_VAL(Pin >> 8U) * 4U)));
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(652): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->AFR[1], (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(691): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U))) >> (POSITION_VAL(Pin >> 8U) * 4U));
+                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../src/main.c(4): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(691): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U))) >> (POSITION_VAL(Pin >> 8U) * 4U));
+                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../src/main.c(14): warning: no previous extern declaration for non-static variable 'uwIC1' [-Wmissing-variable-declarations]
+uint16_t uwIC1 = 0;
+         ^
+../src/main.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t uwIC1 = 0;
+^
+../src/main.c(15): warning: no previous extern declaration for non-static variable 'uwIC2' [-Wmissing-variable-declarations]
+uint16_t uwIC2 = 0;
+         ^
+../src/main.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t uwIC2 = 0;
+^
+../src/main.c(16): warning: no previous extern declaration for non-static variable 'uwDiff' [-Wmissing-variable-declarations]
+uint16_t uwDiff = 0;
+         ^
+../src/main.c(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t uwDiff = 0;
+^
+../src/main.c(17): warning: no previous extern declaration for non-static variable 'uhICIndex' [-Wmissing-variable-declarations]
+uint16_t uhICIndex = 0;
+         ^
+../src/main.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t uhICIndex = 0;
+^
+../src/main.c(23): warning: no previous extern declaration for non-static variable 'period' [-Wmissing-variable-declarations]
+double period = 0;
+       ^
+../src/main.c(23): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+double period = 0;
+^
+../src/main.c(25): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+int main()
+        ^
+         void
+../src/main.c(99): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                        uwIC1 = LL_TIM_IC_GetCaptureCH1(TIM2);
+                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c(105): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                        uwIC2 = LL_TIM_IC_GetCaptureCH1(TIM2);
+                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c(110): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                                        uwDiff = ((LL_TIM_GetAutoReload(TIM2) - uwIC1) +uwIC2) + 1;
+                                               ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../src/main.c(120): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  LL_FLASH_Enable64bitAccess();; 
+                               ^~
+../src/main.c(130): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  };
+   ^
+../src/main.c(139): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    };
+     ^
+../src/main.c(149): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  };
+   ^
+../src/main.c(156): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  };
+   ^
+../src/main.c(169): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+../src/main.c(19): warning: no previous extern declaration for non-static variable 'TIM2CLK' [-Wmissing-variable-declarations]
+uint32_t TIM2CLK;
+         ^
+../src/main.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t TIM2CLK;
+^
+../src/main.c(20): warning: no previous extern declaration for non-static variable 'PSC' [-Wmissing-variable-declarations]
+uint32_t PSC;
+         ^
+../src/main.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t PSC;
+^
+../src/main.c(21): warning: no previous extern declaration for non-static variable 'IC1PSC' [-Wmissing-variable-declarations]
+uint32_t IC1PSC;
+         ^
+../src/main.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t IC1PSC;
+^
+41 warnings generated.
+compiling main.c...
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(292): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->MODER, (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U)), (Mode << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(292): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->MODER, (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U)), (Mode << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(327): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                  ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(327): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(433): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Speed << (POSITION_VAL(Pin) * 2U)));
+             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(432): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->OSPEEDR, (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(470): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                       ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(470): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(503): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->PUPDR, (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U)), (Pull << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(503): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->PUPDR, (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U)), (Pull << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(536): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                  ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(536): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(576): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Alternate << (POSITION_VAL(Pin) * 4U)));
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(575): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->AFR[0], (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(613): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U))) >> (POSITION_VAL(Pin) * 4U));
+                                                                                 ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(613): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U))) >> (POSITION_VAL(Pin) * 4U));
+                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(653): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Alternate << (POSITION_VAL(Pin >> 8U) * 4U)));
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(652): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->AFR[1], (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(691): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U))) >> (POSITION_VAL(Pin >> 8U) * 4U));
+                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(691): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U))) >> (POSITION_VAL(Pin >> 8U) * 4U));
+                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(208): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  pinpos = POSITION_VAL(GPIO_InitStruct->Pin);
+         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c(239): warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+        if (POSITION_VAL(currentpin) < 0x00000008U)
+            ~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~
+25 warnings generated.
+compiling stm32l1xx_ll_gpio.c...
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_utils.c(36): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_rcc.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_utils.c(36): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_rcc.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+3 warnings generated.
+compiling stm32l1xx_ll_utils.c...
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_tim.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_tim.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_tim.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_tim.h(45): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../../Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_tim.c(38): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_tim.h(168): warning: padding struct 'LL_TIM_InitTypeDef' with 2 bytes to align 'CounterMode' [-Wpadded]
+  uint32_t CounterMode;       /*!< Specifies the counter mode.
+           ^
+4 warnings generated.
+compiling stm32l1xx_ll_tim.c...
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(10): warning: In file included from...
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(11): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(10): warning: In file included from...
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(11): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(159): warning: In file included from...
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include/stm32l152xb.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(10): warning: In file included from...
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(397): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/* code for '<B5>' character */
+             ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(409): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/* constant code for <B0> */
+                     ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(292): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->MODER, (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U)), (Mode << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(292): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->MODER, (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U)), (Mode << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(327): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                  ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(327): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_MODER_MODER0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(433): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Speed << (POSITION_VAL(Pin) * 2U)));
+             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(432): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->OSPEEDR, (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(470): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                       ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(470): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_OSPEEDER_OSPEEDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(503): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->PUPDR, (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U)), (Pull << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(503): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->PUPDR, (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U)), (Pull << (POSITION_VAL(Pin) * 2U)));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(536): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                                                                                  ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(536): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_PUPDR_PUPDR0 << (POSITION_VAL(Pin) * 2U))) >> (POSITION_VAL(Pin) * 2U));
+                             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(576): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Alternate << (POSITION_VAL(Pin) * 4U)));
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(575): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->AFR[0], (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(613): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U))) >> (POSITION_VAL(Pin) * 4U));
+                                                                                 ^~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(613): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRL_AFSEL0 << (POSITION_VAL(Pin) * 4U))) >> (POSITION_VAL(Pin) * 4U));
+                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(653): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+             (Alternate << (POSITION_VAL(Pin >> 8U) * 4U)));
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(652): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MODIFY_REG(GPIOx->AFR[1], (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U)),
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(232): note: expanded from macro 'MODIFY_REG'
+#define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(228): note: expanded from macro 'WRITE_REG'
+#define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(691): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U))) >> (POSITION_VAL(Pin >> 8U) * 4U));
+                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~ ~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(18): warning: In file included from...
+../../Drivers/STM32L1xx_HAL_Driver/Inc\stm32l1xx_ll_gpio.h(691): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                             (GPIO_AFRH_AFSEL8 << (POSITION_VAL(Pin >> 8U) * 4U))) >> (POSITION_VAL(Pin >> 8U) * 4U));
+                             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(234): note: expanded from macro 'POSITION_VAL'
+#define POSITION_VAL(VAL)     (__CLZ(__RBIT(VAL))) 
+                               ^
+../../Drivers/CMSIS/Include/cmsis_armcc_V6.h(903): note: expanded from macro '__CLZ'
+#define __CLZ             __builtin_clz
+                          ^
+../../Drivers/CMSIS/Device/ST/STM32L1xx/Include\stm32l1xx.h(224): note: expanded from macro 'READ_BIT'
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+                                        ^~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(37): warning: no previous extern declaration for non-static variable 'bLCDGlass_KeyPressed' [-Wmissing-variable-declarations]
+__IO uint8_t bLCDGlass_KeyPressed = 0; 
+             ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(37): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__IO uint8_t bLCDGlass_KeyPressed = 0; 
+     ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(88): warning: no previous extern declaration for non-static variable 'CapLetterMap' [-Wmissing-variable-declarations]
+const uint16_t CapLetterMap[26]=
+               ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(88): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint16_t CapLetterMap[26]=
+      ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(99): warning: no previous extern declaration for non-static variable 'NumberMap' [-Wmissing-variable-declarations]
+const uint16_t NumberMap[10]=
+               ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(99): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint16_t NumberMap[10]=
+      ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(108): warning: no previous extern declaration for non-static variable 'LCDBar' [-Wmissing-variable-declarations]
+uint8_t LCDBar = BATTERYLEVEL_FULL;
+        ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(108): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t LCDBar = BATTERYLEVEL_FULL;
+^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(221): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write(LCD_BAR0_2_COM, ~(LCD_BAR0_SEG), LCD_BAR0_SEG);
+        ~~~~~~~~~~~~                 ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(227): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write(LCD_BAR1_3_COM, ~(LCD_BAR1_SEG), LCD_BAR1_SEG);
+        ~~~~~~~~~~~~                 ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(233): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write(LCD_BAR0_2_COM, ~(LCD_BAR2_SEG), LCD_BAR2_SEG);
+        ~~~~~~~~~~~~                 ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(239): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR3_SEG), LCD_BAR3_SEG);
+        ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(275): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write( LCD_BAR0_2_COM, ~(LCD_BAR0_SEG) , 0);
+        ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(281): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR1_SEG), 0);
+        ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(287): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write( LCD_BAR0_2_COM, ~(LCD_BAR2_SEG), 0);
+        ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(293): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR3_SEG), 0);
+        ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(324): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR0_2_COM, ~(LCD_BAR0_SEG | LCD_BAR2_SEG), 0);
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(326): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR1_SEG | LCD_BAR3_SEG), 0);
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(333): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR0_2_COM, ~(LCD_BAR0_SEG | LCD_BAR2_SEG), LCD_BAR0_SEG);
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(335): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR1_SEG | LCD_BAR3_SEG), 0);
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(342): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR0_2_COM, ~(LCD_BAR0_SEG | LCD_BAR2_SEG), LCD_BAR0_SEG);
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(344): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR1_SEG | LCD_BAR3_SEG), LCD_BAR1_SEG);
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(351): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR0_2_COM, ~(LCD_BAR0_SEG | LCD_BAR2_SEG), (LCD_BAR0_SEG | LCD_BAR2_SEG));
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(353): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR1_SEG | LCD_BAR3_SEG), LCD_BAR1_SEG);
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(360): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR0_2_COM, ~(LCD_BAR0_SEG | LCD_BAR2_SEG), (LCD_BAR0_SEG | LCD_BAR2_SEG));
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(362): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    LL_LCD_Write( LCD_BAR1_3_COM, ~(LCD_BAR1_SEG | LCD_BAR3_SEG), (LCD_BAR1_SEG | LCD_BAR3_SEG));
+    ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(420): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT1_COM0, LCD_DIGIT1_COM0_SEG_MASK, data); /* 1G 1B 1M 1E */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(121): note: expanded from macro 'LCD_DIGIT1_COM0_SEG_MASK'
+#define LCD_DIGIT1_COM0_SEG_MASK      ~(LCD_SEG0 | LCD_SEG1 | LCD_SEG22 | LCD_SEG23)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(424): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT1_COM1, LCD_DIGIT1_COM1_SEG_MASK, data) ; /* 1F 1A 1C 1D  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(123): note: expanded from macro 'LCD_DIGIT1_COM1_SEG_MASK'
+#define LCD_DIGIT1_COM1_SEG_MASK      ~(LCD_SEG0 | LCD_SEG1 | LCD_SEG22 | LCD_SEG23)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(428): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT1_COM2, LCD_DIGIT1_COM2_SEG_MASK, data) ; /* 1Q 1K 1Col 1P  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(125): note: expanded from macro 'LCD_DIGIT1_COM2_SEG_MASK'
+#define LCD_DIGIT1_COM2_SEG_MASK      ~(LCD_SEG0 | LCD_SEG1 | LCD_SEG22 | LCD_SEG23)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(432): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT1_COM3, LCD_DIGIT1_COM3_SEG_MASK, data) ; /* 1H 1J 1DP 1N  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(127): note: expanded from macro 'LCD_DIGIT1_COM3_SEG_MASK'
+#define LCD_DIGIT1_COM3_SEG_MASK      ~(LCD_SEG0 | LCD_SEG1 | LCD_SEG22 | LCD_SEG23)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(439): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT2_COM0, LCD_DIGIT2_COM0_SEG_MASK, data); /* 2G 2B 2M 2E */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(130): note: expanded from macro 'LCD_DIGIT2_COM0_SEG_MASK'
+#define LCD_DIGIT2_COM0_SEG_MASK      ~(LCD_SEG2 | LCD_SEG3 | LCD_SEG20 | LCD_SEG21)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(443): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT2_COM1, LCD_DIGIT2_COM1_SEG_MASK, data) ; /* 2F 2A 2C 2D  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(132): note: expanded from macro 'LCD_DIGIT2_COM1_SEG_MASK'
+#define LCD_DIGIT2_COM1_SEG_MASK      ~(LCD_SEG2 | LCD_SEG3 | LCD_SEG20 | LCD_SEG21)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(447): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT2_COM2, LCD_DIGIT2_COM2_SEG_MASK, data) ; /* 2Q 2K 2Col 2P  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(134): note: expanded from macro 'LCD_DIGIT2_COM2_SEG_MASK'
+#define LCD_DIGIT2_COM2_SEG_MASK      ~(LCD_SEG2 | LCD_SEG3 | LCD_SEG20 | LCD_SEG21)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(451): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT2_COM3, LCD_DIGIT2_COM3_SEG_MASK, data) ; /* 2H 2J 2DP 2N  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(136): note: expanded from macro 'LCD_DIGIT2_COM3_SEG_MASK'
+#define LCD_DIGIT2_COM3_SEG_MASK      ~(LCD_SEG2 | LCD_SEG3 | LCD_SEG20 | LCD_SEG21)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(458): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT3_COM0, LCD_DIGIT3_COM0_SEG_MASK, data); /* 3G 3B 3M 3E */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(139): note: expanded from macro 'LCD_DIGIT3_COM0_SEG_MASK'
+#define LCD_DIGIT3_COM0_SEG_MASK      ~(LCD_SEG4 | LCD_SEG5 | LCD_SEG18 | LCD_SEG19)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(462): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT3_COM1, LCD_DIGIT3_COM1_SEG_MASK, data) ; /* 3F 3A 3C 3D  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(141): note: expanded from macro 'LCD_DIGIT3_COM1_SEG_MASK'
+#define LCD_DIGIT3_COM1_SEG_MASK      ~(LCD_SEG4 | LCD_SEG5 | LCD_SEG18 | LCD_SEG19)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(466): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT3_COM2, LCD_DIGIT3_COM2_SEG_MASK, data) ; /* 3Q 3K 3Col 3P  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(143): note: expanded from macro 'LCD_DIGIT3_COM2_SEG_MASK'
+#define LCD_DIGIT3_COM2_SEG_MASK      ~(LCD_SEG4 | LCD_SEG5 | LCD_SEG18 | LCD_SEG19)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(470): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT3_COM3, LCD_DIGIT3_COM3_SEG_MASK, data) ; /* 3H 3J 3DP 3N  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(145): note: expanded from macro 'LCD_DIGIT3_COM3_SEG_MASK'
+#define LCD_DIGIT3_COM3_SEG_MASK      ~(LCD_SEG4 | LCD_SEG5 | LCD_SEG18 | LCD_SEG19)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(476): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM0, LCD_DIGIT4_COM0_SEG_MASK, data); /* 4G 4B 4M 4E */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(148): note: expanded from macro 'LCD_DIGIT4_COM0_SEG_MASK'
+#define LCD_DIGIT4_COM0_SEG_MASK      ~(LCD_SEG6 | LCD_SEG17)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(479): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM0_1, LCD_DIGIT4_COM0_1_SEG_MASK, data); /* 4G 4B 4M 4E */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(150): note: expanded from macro 'LCD_DIGIT4_COM0_1_SEG_MASK'
+#define LCD_DIGIT4_COM0_1_SEG_MASK    ~(LCD_SEG7 | LCD_SEG16)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(482): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM1, LCD_DIGIT4_COM1_SEG_MASK, data) ; /* 4F 4A 4C 4D  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(152): note: expanded from macro 'LCD_DIGIT4_COM1_SEG_MASK'
+#define LCD_DIGIT4_COM1_SEG_MASK      ~(LCD_SEG6 |  LCD_SEG17)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(485): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM1_1, LCD_DIGIT4_COM1_1_SEG_MASK, data) ; /* 4F 4A 4C 4D  */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(154): note: expanded from macro 'LCD_DIGIT4_COM1_1_SEG_MASK'
+#define LCD_DIGIT4_COM1_1_SEG_MASK    ~(LCD_SEG7 | LCD_SEG16)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(488): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM2, LCD_DIGIT4_COM2_SEG_MASK, data) ; /* 4Q 4K 4Col 4P  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(156): note: expanded from macro 'LCD_DIGIT4_COM2_SEG_MASK'
+#define LCD_DIGIT4_COM2_SEG_MASK      ~(LCD_SEG6 | LCD_SEG17)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(491): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM2_1, LCD_DIGIT4_COM2_1_SEG_MASK, data) ; /* 4Q 4K 4Col 4P  */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(158): note: expanded from macro 'LCD_DIGIT4_COM2_1_SEG_MASK'
+#define LCD_DIGIT4_COM2_1_SEG_MASK    ~(LCD_SEG7 | LCD_SEG16)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(494): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM3, LCD_DIGIT4_COM3_SEG_MASK, data) ; /* 4H 4J 4DP 4N  */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(160): note: expanded from macro 'LCD_DIGIT4_COM3_SEG_MASK'
+#define LCD_DIGIT4_COM3_SEG_MASK      ~(LCD_SEG6 | LCD_SEG17)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(497): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT4_COM3_1, LCD_DIGIT4_COM3_1_SEG_MASK, data) ; /* 4H 4J 4DP 4N  */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(162): note: expanded from macro 'LCD_DIGIT4_COM3_1_SEG_MASK'
+#define LCD_DIGIT4_COM3_1_SEG_MASK    ~(LCD_SEG7 | LCD_SEG16)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(503): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM0, LCD_DIGIT5_COM0_SEG_MASK, data); /* 5G 5B 5M 5E */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(165): note: expanded from macro 'LCD_DIGIT5_COM0_SEG_MASK'
+#define LCD_DIGIT5_COM0_SEG_MASK      ~(LCD_SEG9 | LCD_SEG14)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(506): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM0_1, LCD_DIGIT5_COM0_1_SEG_MASK, data); /* 5G 5B 5M 5E */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(167): note: expanded from macro 'LCD_DIGIT5_COM0_1_SEG_MASK'
+#define LCD_DIGIT5_COM0_1_SEG_MASK    ~(LCD_SEG8 | LCD_SEG15)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(509): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM1, LCD_DIGIT5_COM1_SEG_MASK, data) ; /* 5F 5A 5C 5D */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(169): note: expanded from macro 'LCD_DIGIT5_COM1_SEG_MASK'
+#define LCD_DIGIT5_COM1_SEG_MASK      ~(LCD_SEG9 | LCD_SEG14)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(512): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM1_1, LCD_DIGIT5_COM1_1_SEG_MASK, data) ; /* 5F 5A 5C 5D */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(171): note: expanded from macro 'LCD_DIGIT5_COM1_1_SEG_MASK'
+#define LCD_DIGIT5_COM1_1_SEG_MASK    ~(LCD_SEG8 | LCD_SEG15)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(515): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM2, LCD_DIGIT5_COM2_SEG_MASK, data) ; /* 5Q 5K 5P */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(173): note: expanded from macro 'LCD_DIGIT5_COM2_SEG_MASK'
+#define LCD_DIGIT5_COM2_SEG_MASK      ~(LCD_SEG9 | LCD_SEG14)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(518): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM2_1, LCD_DIGIT5_COM2_1_SEG_MASK, data) ; /* 5Q 5K 5P */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(175): note: expanded from macro 'LCD_DIGIT5_COM2_1_SEG_MASK'
+#define LCD_DIGIT5_COM2_1_SEG_MASK    ~(LCD_SEG8 | LCD_SEG15)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(521): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM3, LCD_DIGIT5_COM3_SEG_MASK, data) ; /* 5H 5J 5N */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(177): note: expanded from macro 'LCD_DIGIT5_COM3_SEG_MASK'
+#define LCD_DIGIT5_COM3_SEG_MASK      ~(LCD_SEG9 | LCD_SEG14)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(524): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT5_COM3_1, LCD_DIGIT5_COM3_1_SEG_MASK, data) ; /* 5H 5J 5N */
+      ~~~~~~~~~~~~                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(179): note: expanded from macro 'LCD_DIGIT5_COM3_1_SEG_MASK'
+#define LCD_DIGIT5_COM3_1_SEG_MASK    ~(LCD_SEG8 | LCD_SEG15)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(531): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT6_COM0, LCD_DIGIT6_COM0_SEG_MASK, data); /* 6G 6B 6M 6E */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(182): note: expanded from macro 'LCD_DIGIT6_COM0_SEG_MASK'
+#define LCD_DIGIT6_COM0_SEG_MASK      ~(LCD_SEG10 | LCD_SEG11 | LCD_SEG12 | LCD_SEG13)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(535): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT6_COM1, LCD_DIGIT6_COM1_SEG_MASK, data) ; /* 6G 6B 6M 6E */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(184): note: expanded from macro 'LCD_DIGIT6_COM1_SEG_MASK'
+#define LCD_DIGIT6_COM1_SEG_MASK      ~(LCD_SEG10 | LCD_SEG11 | LCD_SEG12 | LCD_SEG13)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(539): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write( LCD_DIGIT6_COM2, LCD_DIGIT6_COM2_SEG_MASK, data) ; /* 6Q 6K 6P */
+      ~~~~~~~~~~~~                   ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(186): note: expanded from macro 'LCD_DIGIT6_COM2_SEG_MASK'
+#define LCD_DIGIT6_COM2_SEG_MASK      ~(LCD_SEG10 | LCD_SEG11 | LCD_SEG12 | LCD_SEG13)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(543): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+      LL_LCD_Write(LCD_DIGIT6_COM3, LCD_DIGIT6_COM3_SEG_MASK, data) ; /* 6Q 6K 6P */
+      ~~~~~~~~~~~~                  ^~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.h(188): note: expanded from macro 'LCD_DIGIT6_COM3_SEG_MASK'
+#define LCD_DIGIT6_COM3_SEG_MASK      ~(LCD_SEG10 | LCD_SEG11 | LCD_SEG12 | LCD_SEG13)
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(546): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+     default:
+     ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(85): warning: no previous extern declaration for non-static variable 'LCD_InitStructure' [-Wmissing-variable-declarations]
+LCD_InitTypeDef LCD_InitStructure;
+                ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(85): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+LCD_InitTypeDef LCD_InitStructure;
+^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(105): warning: no previous extern declaration for non-static variable 'Digit' [-Wmissing-variable-declarations]
+uint32_t Digit[4];     /* Digit frame buffer */
+         ^
+../../Drivers/BSP/STM32L152C-Discovery/stm32l152_glass_lcd.c(105): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Digit[4];     /* Digit frame buffer */
+^
+82 warnings generated.
+compiling stm32l152_glass_lcd.c...
+linking...
+Program Size: Code=1448 RO-data=276 RW-data=4 ZI-data=1656  
+".\Objects\STM32L152RB.axf" - 0 Error(s), 168 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L1xx_DFP.1.4.1.pack
+                Keil.STM32L1xx_DFP.1.4.1
+                STMicroelectronics STM32L1 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/phank/AppData/Local/Arm/Packs/Keil/STM32L1xx_DFP/1.4.1/Drivers/CMSIS/Device/ST/STM32L1xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
